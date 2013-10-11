@@ -1,0 +1,41 @@
+1, 等待收到kActionStartRound=3后, 再发3000 开始一轮, 仅限切牌这1次. 如果超时(2秒)的话, 就再由server选择.
+4, 把魔法牌都写完.
+9, 写弃牌
+
+6, 认真研究fish server的schedule, 看它的schedule是怎么复用的
+7, 解决schedule不能重用的问题. 看FishServer里应该是能重用的? 
+8, free play 时候每次做完一个操作, free play的时间要重算
+
+
+
+90, 认真写available id list返回的结果, 比如没怒气时候不能出s技能牌等等
+99, 增加一些数据保护, 传来-1什么的要怎么处理, 当cancel或者default之类的
+
+
+
+
+
+
+
+
+
+delay task
+2, (之后再解)  在schedule中, 如果收到client的结果需要立刻cancel schedule
+
+
+
+
+
+
+done
+5, 整理常量
+3, 改成带个clearTable参数, 客户端去检查true就clear
+
+刘兵 9/18/2013 8:40:42 AM
+昨天不能出闪的问题是因为参数selectable_count没传过来
+刘兵  3:19:44 PM
+关于手牌参数也要改一下了，逻辑类似血和怒气，把更改的数发过来，不是总的手牌数。
+
+刘兵  3:32:16 PM
+发送3001时，也要发个public。
+

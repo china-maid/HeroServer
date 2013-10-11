@@ -1,0 +1,3 @@
+<settings>
+	<connection host="192.168.1.113" ip="192.168.1.113" port="9899" transport="binarytcp" serverId="Localhost" />
+</settings>
